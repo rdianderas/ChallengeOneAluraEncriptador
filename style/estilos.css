@@ -1,0 +1,293 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-image: url("../image/fondo2.jpg");
+    }
+    .header
+    {
+        display: grid;
+        grid-template-rows:10vh;
+        min-height: 75px;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 90vh;
+        padding-right: 40px;
+    }
+
+    .left {
+    /* background-color: #B2A4FF; */
+    }
+
+    .right {
+    /* background-color: #B2A4FF; */
+    padding: 10px;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+    .logo {
+        width: auto;
+        height: 55px;
+        margin: 0;
+        padding-left: 40px;
+    }
+    .head-titulo
+    {
+        width: auto;
+        height: 55px;
+        margin: 0;
+        padding-left: 60px;
+        font-size: 35px;
+        font-weight: bold;
+        margin-right: auto;
+        padding-top: 10px;
+        color: white;
+    }
+    .logo-alura {
+        width: auto;
+        height: 55px;
+        margin: 0;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        padding-right: 40px;
+    }
+    .form-control {
+        display: block;
+        width: 80%;
+        height: 100%;
+        padding: 6px 12px;
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: #fffbfb;
+        background-color: #7473c04d;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .form-control2 {
+        display: block;
+        width: 80%;
+        height: 90%;
+        padding: 6px 12px;
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: #fffbfb;
+        background-color: #7473c04d;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    ::placeholder {
+        color: #fffbfb;
+        font-style: italic;
+        font-size: 18px;
+    }
+    .fila
+    {
+        padding-top: 20px;
+        padding-left: 150px;
+    }
+    .btn{
+        
+        width: 328px;
+        height: 67px;
+        background: #FFB4B4;
+        border-radius: 24px;
+        color: #ffffff;
+        border-color: transparent;
+        font-size: 18px;
+    }
+    .btn2
+    {
+        width: 328px;
+        height: 67px;
+        background: #B2A4FF;
+        border-radius: 24px;
+        color: #ffffff;
+        border-color: #9d8cfa;
+        font-size: 18px;
+    }
+    .btn3
+    {
+        width: 250px;
+        height: 67px;
+        background: #B2A4FF;
+        border-radius: 24px;
+        color: #ffffff;
+        border-color: #9d8cfa;
+        font-size: 18px;
+    }
+    .dibujo{
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+    .titulo
+    {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .subTitulo{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .contenido-encriptado
+    {
+        background-color: #ffffffb8;
+        display: grid;
+        grid-template-rows: 60vh;
+        border-radius: 32px;
+    }
+    .Encriptado{
+        display: block;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    .btnCopiar
+    {
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .Rut
+    {
+        color: #FFB4B4;
+    }
+    .fila-texto
+    {
+        display: grid;
+        grid-template-rows: 70vh;
+    }
+    .foot
+    {
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        margin-bottom: 5px;
+    }
+    .foot-copyright
+    {
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        margin-bottom: 5px;
+    }
+    @media (min-width: 380px) {
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 55vh;
+            padding-right: 0px;
+        }
+        .right {
+            padding-left: 50px;
+            padding-right: 40px;
+        }
+        .left {
+                padding-right: 40px;
+            }
+        .dibujo {
+            padding-top: 5%;
+            padding-left: 20%;
+        }
+        .fila-texto
+        {
+            grid-template-rows: 34vh;
+        }
+        .contenido-encriptado {
+            background-color: #ffffffb8;
+            display: grid;
+            grid-template-rows: 30vh;
+            border-radius: 32px;
+        }
+        .fila {
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+        .form-control {
+            width: 95%;
+        }
+        .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .btn2 {
+            width: 100%;
+        }
+    }
+    @media (min-width: 900px) {
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 55vh;
+            padding-right: 40px;
+        }
+        .left {
+                padding-right: 0px;
+            }
+        .right {
+            padding-left: 50px;
+            padding-right: 15px;
+        }
+        .dibujo {
+            padding-top: 5%;
+            padding-left: 0%;
+        }
+        .fila-texto
+        {
+            grid-template-rows: 35vh;
+        }
+        .contenido-encriptado {
+            background-color: #ffffffb8;
+            display: grid;
+            grid-template-rows: 45vh;
+            border-radius: 32px;
+        }
+        .btn{
+        
+            width: 48%;
+           
+        }
+        .btn2
+        {
+            width: 48%;
+            margin-left: 15px;
+         
+        }
+    }
+    @media (min-width: 1300px) {
+        .contenedor {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 85vh;
+            padding-right: 40px;
+        }
+        .left {
+                padding-right: 40px;
+            }
+        .fila-texto {
+            grid-template-rows: 55vh;
+        }
+    }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="image/alura-logo.svg" alt="alura-logo" class="logo-alura">
+                </div>
+                <div class="head-titulo">
+                    <div>Encrypto<span class="Rut">Rut</span></div>
+                </div>
+                <ul class="nav-links">
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/in/rut-dianderas-eac" target="_blank"> <img src="image/linkedin.png" alt="alura-logo"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rdianderas" target="_blank"> <img src="image/github.png" alt="alura-logo"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="contenedor">
+        <div class="left">
+            <form id="frmEncriptar" name="frmEncriptar" action="#">
+                    <div class="fila fila-texto">
+                        <textarea id="txtextoOriginal" name="txtextoOriginal" rows="10" cols="50" class="form-control" placeholder="Ingrese el texto a encriptar"></textarea>
+                    </div>
+                    <div class="fila">
+                       <button id="btEncrtiptar" type="button" name="btEncriptar" class="btn" onclick="Encriptar()">
+                        <i class="fa fa-key"></i> Encriptar
+                       </button>
+                       <button id="btDesEncrtiptar" name="btEncriptar" type="button" class="btn2" onclick="DesEncriptar()">
+                        <i class="fa fa-unlock"></i> Desencriptar
+                       </button>
+                    </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="contenido-encriptado">
+                <div class="dibujo" id="dibujo">
+                    <img src="image/Muñeco.png" alt="Dibujito">
+                </div>
+                <div class="titulo" id="titulo">
+                    <p>Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="subTitulo" id="subTitulo">
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="Encriptado" id="textEncriptado">
+                    <textarea id="txtEncriptado" name="txtEncriptado" rows="10" cols="50" class="form-control2" placeholder="Ingrese el texto a encriptar"></textarea>
+                </div>
+                <div class="btnCopiar" id="botonCopiar">
+                    <button id="btCopiar" name="btCopiar" class="btn3" onclick="Copiar()">
+                        <i class="fa fa-clone"></i> Copiar
+                       </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="foot">Programa ONE - Oracle Next Education - Chile GRUPO 5</div>
+        <div class="foot-copyright">© 2023 - Copyright Rut Dianderas. Todos los derechos reservados </div>
+    </footer>
+    <script src="script/script.js" crossorigin="anonymous"></script>
+</body>
+</html>
